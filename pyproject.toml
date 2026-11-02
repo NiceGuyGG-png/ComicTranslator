@@ -1,0 +1,6 @@
+[project]
+name = "comic-translator"
+version = "0.0.1"
+description = "AI platform for Chinese-to-Vietnamese comic translation."
+readme = "README.md"
+requires-python = ">=3.10"
