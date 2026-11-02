@@ -1,0 +1,23 @@
+version: "3.9"
+
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+      - model_cache:/root/.cache
+    environment:
+      - ENV=development
+      - MODEL_DEVICE=cpu   # hoặc cuda
+    restart: unless-stopped
+
+  # Uncomment khi cần queue
+  # redis:
+  #   image: redis:7-alpine
+  #   ports:
+  #     - "6379:6379"
+
+volumes:
+  model_cache:

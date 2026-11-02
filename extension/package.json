@@ -1,0 +1,11 @@
+{
+  "name": "comic-translator-extension",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Browser extension for ComicTranslator",
+  "scripts": {
+    "dev": "echo 'Load unpacked extension from this folder in chrome://extensions'",
+    "build": "echo 'Build step sẽ thêm sau (Vite/Webpack)'"
+  },
+  "devDependencies": {}
+}
