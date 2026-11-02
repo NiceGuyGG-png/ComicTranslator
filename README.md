@@ -5,7 +5,7 @@ Dự án dịch truyện tranh Trung Quốc (ZH) sang Tiếng Việt (VN) sử d
 ## Mục tiêu
 
 - Extension chạy trên trình duyệt để capture/trích xuất panel truyện, gửi request dịch.
-- Backend chạy trên server (hoặc local) để chạy các model AI: OCR, Translation, Layout analysis, v.v.
+- Backend chạy trên server để chạy các model AI: OCR, Translation, Layout analysis, v.v.
 - Triển khai dần theo module để team dễ phát triển song song.
 
 ## Cấu trúc thư mục
@@ -68,9 +68,9 @@ npm run build   # hoặc load unpacked trong chrome://extensions
 |---------------|------------------------------------|
 | Extension     | Manifest V3, TypeScript, Vite      |
 | Backend       | FastAPI, Python 3.11+              |
-| AI Models     | PaddleOCR / EasyOCR, NLLB / Qwen / local LLM |
+| AI Models     | LLM local for translate and OCR    |
 | Container     | Docker + docker-compose            |
-| Queue (sau)   | Redis + Celery / RQ (nếu cần batch) |
+| Queue (sau)   | Redis + Celery / RQ (nếu cần batch)|
 
 ---
 
